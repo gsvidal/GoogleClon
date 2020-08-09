@@ -86,10 +86,11 @@ main{
   align-items: center;
 }
 input {
-  width: 450px;
+  width: 440px;
   height: 40px;
   border: none;
   outline: none;
+  padding: 0 10px;
 }
 main .main-input-container:hover{
   box-shadow: 0 1px 6px 0 #20212447;
