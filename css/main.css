@@ -1,0 +1,179 @@
+/* esto es para resetear todos los estilos
+*{
+  margin: 0;
+  padding: 0;
+} */
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* border: 1px solid orange; */
+
+}
+
+header{
+  /* border: 1px solid yellow; */
+  width: 100%;
+  height: 60px;
+
+}
+header nav{
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: flex-end;
+
+}
+.nav-right-section{
+  /* border: 1px solid red; */
+  width: 250px;
+  height: inherit;
+  display: inherit;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.nav-right-section a{
+  /* border: 1px solid blue; */
+       margin-right :10px;
+  color: rgb(0, 0, 0);
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+/* a{
+  cursor: pointer;
+} */
+.menu-icon {
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-image: url('../images/noun_gridmenu_344425.png');
+  margin-right: 10px;
+  cursor: pointer;
+}
+.nav-right-section img{
+  border-radius: 50%;
+}
+main{
+  margin-top: 150px;
+  text-align: center;
+}
+.main-logo{
+  width: 270px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+.main-logo img{
+  width: inherit;
+}
+.main-input {
+  width: 530px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+.main-input-container{
+  width: 525px;
+  border-radius: 100px;
+  border: 1px solid #dbdbdc;
+  display: flex;
+  /* se le da center por que mas abajo en input se le da 450px asi que ya no es necesario poner space beetween xq ya los mando con su tamaño a los extremos, solo queda centrar a los iconos en su pequeño espácio */
+
+  justify-content: center;
+  align-items: center;
+}
+input {
+  width: 450px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+main .main-input-container:hover{
+  box-shadow: 0 1px 6px 0 #20212447;
+  border-color: #dfe1e500 ;
+}
+main .main-input .search-icon{
+  background-image: url('https://img.icons8.com/android/24/000000/search.png');
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+}
+main .main-input .micro-icon{
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png');
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+  /* cursor: pointer; */
+}
+main .main-buttons{
+  width: 530px;
+  margin: 0 auto;
+  /* display: flex;
+  justify-content: space-around; */
+}
+main .main-buttons div{
+  display: inline-block;
+}
+main .main-buttons button{
+  height: 36px;
+  background-color: #f2f2f2;
+  border: none;
+  font-size: 14px;
+  color: #5f6368;
+  border-radius: 6px;
+  padding: 0 15px;
+  margin: 0 5px; 
+  /* Es mejor usar margen a ambos lados para que se mantenga al medio los botones, quizas con margin-right:15px no se nota que no estan centrados pero si le pones unos 50px se nota, */
+  margin-bottom: 50px;
+}
+main .main-buttons button:hover{
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px 0 #c6c6c6;
+  color: black;
+  cursor: pointer;
+  margin: 0 4px; /* esto hace que los botones no se muevan al hacerles hover*/
+}
+footer{
+  width: 100%;
+  height: 50px;
+  position:absolute;
+  bottom:0;
+  display: flex;
+
+  /* grid-template-columns: 1fr 1fr; */
+
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 13px; */
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+
+}
+footer ul{
+  margin: 10px;
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+
+}
+/* footer .footer-left{
+  justify-self: left;
+}
+footer .footer-right{
+  justify-self: right;
+} */
+footer ul li a{
+  margin: 10px;
+  color: #5f6368;
+}
+footer ul li a:hover{
+  text-decoration: underline;
+}
